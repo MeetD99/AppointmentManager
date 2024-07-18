@@ -34,6 +34,7 @@ const AddAppointment = ({ addAppointment, setAddButtonToggled, selectedDate, app
     setService('');
     setNotes('');
     setAddButtonToggled(false);
+    window.location.reload();
   };
 
   const isTimeAvailable = (time) => {
