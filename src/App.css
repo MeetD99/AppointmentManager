@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Poppins";
+  src: url('../src/assets/poppins/Poppins-Bold.otf');
+}
+
+@font-face {
+  font-family: "Lilita_One";
+  src: url('../src/assets/Lilita_One/LilitaOne-Regular.ttf');
+}
+
+.app{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;  
+}
+
+.sidebar-container{
+  flex: 1.5;
+  background-color: #3563E9;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content{
+  background-image: url('../src/assets/back.png');
+  background-size: cover;
+  flex: 5; 
+}
+
+
+.content .navbar{
+  display: flex;
+  background-color: rgba(27, 109, 233, 0.3);
+  color: white;
+  font-family: "Poppins";
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.content .navbar h1{
+  color: white;
+  -webkit-text-stroke: 2px #3563E9;
+  cursor: pointer;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.sidebar p:first-child{
+  font-size: 22px;
+  font-family: "Poppins";
+  margin-top: 12px;
+}
+
+.sidebar p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+.datepicker{
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  color: #3563E9;
+  font-family: "Lilita_One";
+  font-size: 18px;
+}
+
+.sidebar-main {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  /* width: 100%; */
+}
+
+.sidebar-main button {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: white;
+  color: #3563E9;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lilita_One';
+}
+
+.sidebar-main button:hover {
+  transform: scale(1.1);
+}
+.sidebar-main button#active{
+  background-color: #3563E9;
+  color: white;
+  border: 2px solid white;
+}
+.appointment-details {
+  padding: 20px;
+  color: black;
+  font-family: "Poppins";
+}
+
+.appointment-details strong, .appointment-details h2{
+  color: #3563E9;
+}
+
+.appointment-details p, .appointment-details h2{
+  text-align: left;
+}
+
+.add-appointment {
+  margin-bottom: 20px;
+  color: #3563E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-appointment form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-appointment input,
+.add-appointment textarea {
+  margin: 5px 0;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.add-appointment button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+}
+
+.add-appointment button:hover {
+  background-color: #0056b3;
+} 
+
+.time-selector{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.time-selector .green-button{
+  background-color: green;
+  color: black;
+}
+
+.time-selector .red-button{
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.legends{
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  margin-top: 30px;
+}
+
+.legends p:nth-child(2){
+  color: black;
+}
+
+.legends p:nth-child(3){
+  color: green; 
+}
+
+
+.app-button{
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  color: #3563E9;
+  margin-top: 20px;
+}
+.app-button h2{
+  margin: 0 0;
+  font-family: "Lilita_One";
+  letter-spacing: 1.2;
+}
+.app-button button{
+  background-color: #3563E9;
+}
